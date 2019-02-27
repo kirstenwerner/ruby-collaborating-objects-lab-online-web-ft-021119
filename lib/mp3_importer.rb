@@ -9,7 +9,7 @@ class MP3Importer
   end 
   
   def files
-    self.path 
+    self.path] 
     # Dir["/path/to/search/**/*.rb"]
     binding.pry
   end 

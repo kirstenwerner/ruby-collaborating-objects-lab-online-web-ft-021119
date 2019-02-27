@@ -17,6 +17,7 @@ class Song
     @artist.save
     @artist.add_song(@song)
     @song.artist = @artist
+    binding.pry
     @song
   end 
   

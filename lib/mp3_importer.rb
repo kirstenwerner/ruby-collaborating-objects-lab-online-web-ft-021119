@@ -9,7 +9,8 @@ class MP3Importer
   end 
   
   def files
-    Dir["#{self.path}/**/*.mp3"].map do |filename|
+    clean_filename = Dir["#{self.path}/**/*.mp3"]
+    clean_filename.map do |filename|
       filename.slice!(self.path)
     end
     clean_filename

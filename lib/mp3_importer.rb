@@ -2,8 +2,7 @@ require 'pry'
 class MP3Importer
 
   attr_accessor :filename, :path
-  @@list_of_filenames = [] 
-  
+
   def initialize(file_path)
     @path = file_path
   end 

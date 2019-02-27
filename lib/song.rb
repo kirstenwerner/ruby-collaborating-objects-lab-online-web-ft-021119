@@ -9,7 +9,7 @@ class Song
   end 
   
   def self.new_by_filename(filename)
-    array = filename.split(/[_,]/)
+    array = filename.split(/[-,]/)
     binding.pry
     @artist = array[0].strip
     @song_name = array[1].strip

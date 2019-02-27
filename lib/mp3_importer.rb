@@ -13,12 +13,9 @@ class MP3Importer
       filename.slice!(self.path+'/')
     end
     clean_filename
-    # Dir["/path/to/search/**/*.rb"]
-    # binding.pry
   end 
   
   def import
     self.files.each {|filename| Song.new_by_filename(filename)}
   end
-  
 end 
